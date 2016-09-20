@@ -89,7 +89,7 @@
       <h1 data-config-title><!-- populated from slide_config.json --></h1>
       <h2 data-config-subtitle><!-- populated from slide_config.json --></h2>
       <p data-config-presenter><!-- populated from slide_config.json --></p>
-            <p style="margin-top: 6px; margin-left: -2px;">Last edited: 2016-09-19 14:52</p>
+            <p style="margin-top: 6px; margin-left: -2px;">Last edited: 2016-09-20 11:30</p>
           </hgroup>
   </slide>
 
@@ -197,7 +197,7 @@ B &amp;= \{2,4,6\}\end{align*}\]</p>
 
 <p>No requirement for \(P(A)\) or \(P(B)\) to be positive. In fact \(\ldots\) see the suggested problems for Chapter 1.</p>
 
-<p>\(A_i, A_2, A_3, \ldots\) (possibly infinite) are (mutually) <em>independent</em> if for any finite subcollection of indices \(I = \{i_1,\ldots,i_n\}\): \[{P{\left(\bigcap_{i \in I} A_i\right)}} = \prod_{i \in I} P(A_i)\]</p>
+<p>\(A_1, A_2, A_3, \ldots\) (possibly infinite) are (mutually) <em>independent</em> if for any finite subcollection of indices \(I = \{i_1,\ldots,i_n\}\): \[{P{\left(\bigcap_{i \in I} A_i\right)}} = \prod_{i \in I} P(A_i)\]</p>
 
 </article></slide><slide class=''><hgroup><h2>independence of two classes of events</h2></hgroup><article  id="independence-of-two-classes-of-events">
 
@@ -210,39 +210,21 @@ B &amp;= \{2,4,6\}\end{align*}\]</p>
 
 <p>The suggests a concept of &quot;independent experiments&quot;, which will be revisited.</p>
 
-</article></slide><slide class=''><hgroup><h2>the &quot;any&quot; and &quot;all&quot; style of examples</h2></hgroup><article  id="the-any-and-all-style-of-examples">
+</article></slide><slide class=''><hgroup><h2>the &quot;any&quot; and &quot;all&quot; style of examples</h2></hgroup><article  id="the-any-and-all-style-of-examples" class="small">
 
 <p>(Note: in probability modeling, independence is usually <em>assumed</em>.)</p>
 
 <p>A subway train is removed from service if <em>any</em> of its doors are stuck open. There is a probability \(p\) of a door getting stuck open on one day of operations. A train has \(n\) doors.</p>
 
-<p>What is the chance a train is removed from service due to stuck doors on one day of operations?</p>
+<p>Example question: what is the chance a train is removed from service due to stuck doors on one day of operations?</p>
 
-</article></slide><slide class='segue dark nobackground level1'><hgroup class = 'auto-fadein'><h2>real valued functions with arguments that live inside sample spaces</h2></hgroup><article  id="real-valued-functions-with-arguments-that-live-inside-sample-spaces">
+<p>\(p^n\) &quot;all doors fail&quot;</p>
 
-</article></slide><slide class=''><hgroup><h2>the main focus of this course</h2></hgroup><article  id="the-main-focus-of-this-course" class="small">
+<p>\(1-p^n\) &quot;not all doors fail&quot;</p>
 
-<p>We&#39;ll use &quot;probability measure&quot; throughout the course, but our main focus will be a different and equally strange object entirely.</p>
+<p>\((1-p)^n\) &quot;no doors fail&quot;</p>
 
-<p>Recall that sample space is often arbitrary and difficult or impossible to describe.</p>
-
-<p>Usually we&#39;re ultimately interested in a number that is associated with the random outcome, rather than the outcome itself.</p>
-
-<p>Consider a coin tossing game with \(S = \{H, T\}\), which might be repeated, from which a multitude of examples can be invented.</p>
-
-</article></slide><slide class=''><hgroup><h2><em>random variable</em></h2></hgroup><article  id="random-variable" class="build">
-
-<p>A <em>random variable</em> is a real valued function of a sample space.</p>
-
-<p>Naming convention: Roman letters near the end of the alphabet \(X\), \(Y\), \(X_1, X_2, \ldots\).</p>
-
-<p>Another strange convention - almost always omit the function&#39;s &quot;argument&quot;.</p>
-
-<p>We will never draw a picture of a random variable, or compute a derivative or an integral of one.</p>
-
-<p>We will instead focus on <em>the</em> defining property of a random variable: its <em>distribution</em>.</p>
-
-<p>Perversely, we will lack the math to actually define <em>distribution</em> rigorously. Informally, the <em>distribution</em> of a random variable \(X\) is the rule that assigns probabilities to values of \(X\).</p></article></slide>
+<p>\(1 - (1-p)^n\) &quot;not <em>no doors fail</em>, in other words <em>any doors fail</em>&quot;</p></article></slide>
 
 
   <slide class="backdrop"></slide>

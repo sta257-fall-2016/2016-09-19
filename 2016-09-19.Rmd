@@ -124,7 +124,7 @@ $$P(A \cap B) = P(A)P(B)$$
 
 No requirement for $P(A)$ or $P(B)$ to be positive. In fact $\ldots$ see the suggested problems for Chapter 1.
 
-$A_i, A_2, A_3, \ldots$ (possibly infinite) are (mutually) *independent* if for any finite subcollection of indices $I = \{i_1,\ldots,i_n\}$:
+$A_1, A_2, A_3, \ldots$ (possibly infinite) are (mutually) *independent* if for any finite subcollection of indices $I = \{i_1,\ldots,i_n\}$:
 $$\P{\bigcap_{i \in I} A_i} = \prod_{i \in I} P(A_i)$$
 
 ## independence of two classes of events
@@ -138,39 +138,21 @@ Classes of events $\mathcal{A}$ and $\mathcal{B}$ are *independent* all pairs of
 
 The suggests a concept of "independent experiments", which will be revisited.
 
-## the "any" and "all" style of examples
+## the "any" and "all" style of examples { .small }
 
 (Note: in probability modeling, independence is usually *assumed*.)
 
 A subway train is removed from service if *any* of its doors are stuck open. There is a probability $p$ of a door getting stuck open on one day of operations. A train has $n$ doors.
 
-What is the chance a train is removed from service due to stuck doors on one day of operations?
+Example question: what is the chance a train is removed from service due to stuck doors on one day of operations?
 
-# real valued functions with arguments that live inside sample spaces
+$p^n$ "all doors fail"
 
-## the main focus of this course { .small }
+$1-p^n$ "not all doors fail"
 
-We'll use "probability measure" throughout the course, but our main focus will be a different and equally strange object entirely.
+$(1-p)^n$ "no doors fail"
 
-Recall that sample space is often arbitrary and difficult or impossible to describe. 
-
-Usually we're ultimately interested in a number that is associated with the random outcome, rather than the outcome itself.
-
-Consider a coin tossing game with $S = \{H, T\}$, which might be repeated, from which a multitude of examples can be invented.
-
-## *random variable* { .build }
-
-A *random variable* is a real valued function of a sample space.
-
-Naming convention: Roman letters near the end of the alphabet $X$, $Y$, $X_1, X_2, \ldots$.
-
-Another strange convention - almost always omit the function's "argument".
-
-We will never draw a picture of a random variable, or compute a derivative or an integral of one. 
-
-We will instead focus on *the* defining property of a random variable: its *distribution*.
-
-Perversely, we will lack the math to actually define *distribution* rigorously. Informally, the *distribution* of a random variable $X$ is the rule that assigns probabilities to values of $X$.
+$1 - (1-p)^n$ "not *no doors fail*, in other words *any doors fail*"
 
 
 
